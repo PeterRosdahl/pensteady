@@ -4,92 +4,141 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Pensteady - Steady SEO Content That Ranks" description="Professional SEO blog content delivered monthly. Set it and forget it - we handle everything from keyword research to publishing.">
+<Layout title="Pensteady - Steady SEO Content That Ranks" description="We publish 4-12 SEO-optimized articles monthly. 800-1200 words each. Keyword research included. Set it and forget it.">
   <Navigation />
   
   <main>
-    <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-5xl lg:text-6xl font-bold text-navy leading-tight mb-6">
-            Steady content.<br/>
-            <span class="text-amber">Steady growth.</span>
-          </h1>
-          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-            Professional SEO blog content delivered monthly. We handle everything from keyword research to publishing on your site.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
-              Get Started
-            </a>
-            <a href="/pricing" class="inline-flex items-center justify-center px-8 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
-              View Pricing
-            </a>
-          </div>
+    <!-- Hero Section - Bold Typography -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
+      <div class="max-w-5xl mx-auto text-center">
+        <h1 class="text-6xl sm:text-7xl lg:text-8xl font-serif font-normal text-navy leading-none mb-8 fade-up">
+          Steady content.<br/>
+          <span class="text-amber italic">Steady growth.</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed fade-up fade-up-delay-1">
+          We publish <strong>4–12 SEO-optimized articles</strong> per month to your blog. <strong>800–1200 words each.</strong> Keyword research, meta tags, and direct CMS integration included. <strong>You do nothing.</strong>
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up fade-up-delay-2">
+          <a href="/contact" class="inline-flex items-center justify-center px-10 py-5 bg-amber text-white text-lg font-semibold rounded-lg hover:bg-amber/90 transition-all hover:scale-105 shadow-lg">
+            Get Started →
+          </a>
+          <a href="/pricing" class="inline-flex items-center justify-center px-10 py-5 border-2 border-navy text-navy text-lg font-semibold rounded-lg hover:bg-navy hover:text-white transition-all">
+            View Pricing
+          </a>
         </div>
         
-        <div class="relative">
-          <!-- Simple SVG Hero Illustration -->
-          <svg viewBox="0 0 400 300" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
-            <!-- Pen -->
-            <line x1="50" y1="150" x2="150" y2="150" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="40" cy="150" r="8" fill="#1e293b"/>
-            <line x1="50" y1="150" x2="50" y2="130" stroke="#1e293b" stroke-width="2"/>
-            
-            <!-- Steady lines transforming into graph -->
-            <line x1="150" y1="150" x2="200" y2="150" stroke="#1e293b" stroke-width="2"/>
-            <line x1="200" y1="145" x2="250" y2="130" stroke="#f59e0b" stroke-width="2"/>
-            <line x1="250" y1="130" x2="300" y2="110" stroke="#f59e0b" stroke-width="2"/>
-            <line x1="300" y1="110" x2="350" y2="80" stroke="#f59e0b" stroke-width="3"/>
-            
-            <!-- Graph axes -->
-            <line x1="200" y1="200" x2="200" y2="80" stroke="#1e293b" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
-            <line x1="200" y1="200" x2="360" y2="200" stroke="#1e293b" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
-            
-            <!-- Growth arrow -->
-            <path d="M 340 85 L 350 80 L 345 90" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
-          </svg>
+        <!-- Social Proof -->
+        <div class="mt-16 pt-12 border-t border-gray-200 fade-up fade-up-delay-3">
+          <p class="text-sm text-gray-500 mb-4">Trusted by content-driven businesses</p>
+          <div class="flex items-center justify-center gap-8 text-gray-400">
+            <span class="text-2xl font-semibold">100+ clients</span>
+            <span class="text-gray-300">•</span>
+            <span class="text-2xl font-semibold">1200+ articles/month</span>
+            <span class="text-gray-300">•</span>
+            <span class="text-2xl font-semibold">3-6 mo. ROI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Pensteady -->
+    <section class="bg-warm py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 fade-up">
+          <h2 class="text-5xl sm:text-6xl font-serif text-navy mb-6">Why Pensteady?</h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Most agencies promise SEO content. We deliver it like clockwork—with proven results.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-10 rounded-2xl shadow-sm fade-up">
+            <div class="text-5xl mb-4">📅</div>
+            <h3 class="text-2xl font-serif text-navy mb-4">100% Predictable</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Your articles publish <strong>every week, on schedule.</strong> No delays, no excuses. You know exactly what's coming and when.
+            </p>
+          </div>
+          
+          <div class="bg-white p-10 rounded-2xl shadow-sm fade-up fade-up-delay-1">
+            <div class="text-5xl mb-4">🎯</div>
+            <h3 class="text-2xl font-serif text-navy mb-4">Keyword-First</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We don't guess topics. Every article targets <strong>real search volume</strong> with competitive keyword research baked in.
+            </p>
+          </div>
+          
+          <div class="bg-white p-10 rounded-2xl shadow-sm fade-up fade-up-delay-2">
+            <div class="text-5xl mb-4">⚙️</div>
+            <h3 class="text-2xl font-serif text-navy mb-4">True Autopilot</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Direct CMS integration. We publish to <strong>your WordPress, Webflow, or Ghost</strong>—no logins, no copying and pasting.
+            </p>
+          </div>
+          
+          <div class="bg-white p-10 rounded-2xl shadow-sm fade-up">
+            <div class="text-5xl mb-4">📈</div>
+            <h3 class="text-2xl font-serif text-navy mb-4">Built to Rank</h3>
+            <p class="text-gray-600 leading-relaxed">
+              <strong>800–1200 words</strong> per article. Proper H1/H2 structure, internal linking, optimized meta descriptions. SEO done right.
+            </p>
+          </div>
+          
+          <div class="bg-white p-10 rounded-2xl shadow-sm fade-up fade-up-delay-1">
+            <div class="text-5xl mb-4">✏️</div>
+            <h3 class="text-2xl font-serif text-navy mb-4">Your Voice, Our Pen</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We analyze your existing content and <strong>match your brand voice.</strong> Readers won't know the difference.
+            </p>
+          </div>
+          
+          <div class="bg-white p-10 rounded-2xl shadow-sm fade-up fade-up-delay-2">
+            <div class="text-5xl mb-4">🚫</div>
+            <h3 class="text-2xl font-serif text-navy mb-4">No Lock-In</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Month-to-month billing. <strong>Cancel anytime.</strong> No contracts, no commitments. We earn your business every month.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     
     <!-- How It Works -->
-    <section class="bg-gray-50 py-20">
+    <section class="py-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-navy mb-4">How It Works</h2>
-          <p class="text-xl text-gray-600">Three simple steps to consistent SEO growth</p>
+        <div class="text-center mb-20 fade-up">
+          <h2 class="text-5xl sm:text-6xl font-serif text-navy mb-6">How It Works</h2>
+          <p class="text-xl text-gray-600">Three steps. Zero ongoing effort from you.</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-xl">
-            <div class="w-12 h-12 bg-amber/10 text-amber rounded-lg flex items-center justify-center text-2xl font-bold mb-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          <div class="text-center fade-up">
+            <div class="w-20 h-20 bg-amber text-white rounded-full flex items-center justify-center text-4xl font-serif font-bold mb-6 mx-auto shadow-lg">
               1
             </div>
-            <h3 class="text-xl font-semibold text-navy mb-3">Choose Your Plan</h3>
-            <p class="text-gray-600">
-              Select a plan that fits your content needs. From 4 to 12 articles per month.
+            <h3 class="text-2xl font-serif text-navy mb-4">Pick Your Plan</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Choose 4, 8, or 12 articles per month. All plans include keyword research and SEO optimization.
             </p>
           </div>
           
-          <div class="bg-white p-8 rounded-xl">
-            <div class="w-12 h-12 bg-amber/10 text-amber rounded-lg flex items-center justify-center text-2xl font-bold mb-4">
+          <div class="text-center fade-up fade-up-delay-1">
+            <div class="w-20 h-20 bg-amber text-white rounded-full flex items-center justify-center text-4xl font-serif font-bold mb-6 mx-auto shadow-lg">
               2
             </div>
-            <h3 class="text-xl font-semibold text-navy mb-3">We Create & Optimize</h3>
-            <p class="text-gray-600">
-              Our team researches keywords, writes SEO-optimized content, and prepares everything for publishing.
+            <h3 class="text-2xl font-serif text-navy mb-4">We Research & Write</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Our team finds high-value keywords, writes engaging content, and optimizes every article for search.
             </p>
           </div>
           
-          <div class="bg-white p-8 rounded-xl">
-            <div class="w-12 h-12 bg-amber/10 text-amber rounded-lg flex items-center justify-center text-2xl font-bold mb-4">
+          <div class="text-center fade-up fade-up-delay-2">
+            <div class="w-20 h-20 bg-amber text-white rounded-full flex items-center justify-center text-4xl font-serif font-bold mb-6 mx-auto shadow-lg">
               3
             </div>
-            <h3 class="text-xl font-semibold text-navy mb-3">Content Goes Live</h3>
-            <p class="text-gray-600">
-              Articles are published directly to your site. You focus on your business while rankings grow.
+            <h3 class="text-2xl font-serif text-navy mb-4">Articles Go Live</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Content publishes directly to your site. You watch traffic grow while focusing on your business.
             </p>
           </div>
         </div>
@@ -97,57 +146,139 @@ import Footer from '../components/Footer.astro';
     </section>
     
     <!-- Pricing Preview -->
-    <section class="py-20">
+    <section class="bg-navy text-white py-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-navy mb-4">Simple, Transparent Pricing</h2>
-          <p class="text-xl text-gray-600">No hidden fees. Cancel anytime.</p>
+        <div class="text-center mb-20 fade-up">
+          <h2 class="text-5xl sm:text-6xl font-serif mb-6">Simple, Transparent Pricing</h2>
+          <p class="text-xl text-gray-300">Choose what fits. Scale when you're ready. Cancel anytime.</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div class="border-2 border-gray-200 rounded-xl p-8 hover:border-amber transition-colors">
-            <h3 class="text-2xl font-bold text-navy mb-2">Starter</h3>
-            <p class="text-4xl font-bold text-navy mb-1">$99<span class="text-xl font-normal text-gray-600">/mo</span></p>
-            <p class="text-gray-600 mb-6">4 articles per month</p>
-            <a href="/pricing" class="block w-full text-center px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
-              Learn More
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Starter -->
+          <div class="bg-white text-navy rounded-2xl p-10 hover:scale-105 transition-all fade-up">
+            <h3 class="text-3xl font-serif mb-2">Starter</h3>
+            <p class="text-gray-600 mb-6">Perfect for new blogs</p>
+            <p class="text-6xl font-serif font-bold mb-8">
+              $99<span class="text-xl font-normal text-gray-600">/mo</span>
+            </p>
+            <ul class="space-y-4 mb-10 text-gray-700">
+              <li class="feature-check">4 articles per month</li>
+              <li class="feature-check">800-1200 words each</li>
+              <li class="feature-check">Keyword research</li>
+              <li class="feature-check">Meta tags & descriptions</li>
+              <li class="feature-check">1 revision per article</li>
+            </ul>
+            <a href="/pricing" class="block w-full text-center px-8 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
+              View Details →
             </a>
           </div>
           
-          <div class="border-2 border-amber rounded-xl p-8 relative">
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber text-white px-4 py-1 rounded-full text-sm font-semibold">
-              Popular
+          <!-- Growth (Popular) -->
+          <div class="bg-amber text-white rounded-2xl p-10 transform md:scale-110 shadow-2xl relative fade-up fade-up-delay-1">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-navy text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide">
+              Most Popular
             </div>
-            <h3 class="text-2xl font-bold text-navy mb-2">Growth</h3>
-            <p class="text-4xl font-bold text-navy mb-1">$199<span class="text-xl font-normal text-gray-600">/mo</span></p>
-            <p class="text-gray-600 mb-6">8 articles per month</p>
-            <a href="/pricing" class="block w-full text-center px-6 py-3 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
-              Learn More
+            <h3 class="text-3xl font-serif mb-2">Growth</h3>
+            <p class="text-amber-100 mb-6">For scaling businesses</p>
+            <p class="text-6xl font-serif font-bold mb-8">
+              $199<span class="text-xl font-normal text-amber-100">/mo</span>
+            </p>
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-start">
+                <span class="text-navy mr-2">✓</span>
+                <span>8 articles per month</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-navy mr-2">✓</span>
+                <span>800-1200 words each</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-navy mr-2">✓</span>
+                <span>Keyword strategy report</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-navy mr-2">✓</span>
+                <span>Competitor analysis</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-navy mr-2">✓</span>
+                <span>2 revisions per article</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-navy mr-2">✓</span>
+                <span><strong>Priority support</strong></span>
+              </li>
+            </ul>
+            <a href="/pricing" class="block w-full text-center px-8 py-4 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-colors">
+              View Details →
             </a>
           </div>
           
-          <div class="border-2 border-gray-200 rounded-xl p-8 hover:border-amber transition-colors">
-            <h3 class="text-2xl font-bold text-navy mb-2">Pro</h3>
-            <p class="text-4xl font-bold text-navy mb-1">$399<span class="text-xl font-normal text-gray-600">/mo</span></p>
-            <p class="text-gray-600 mb-6">12 articles per month</p>
-            <a href="/pricing" class="block w-full text-center px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
-              Learn More
+          <!-- Pro -->
+          <div class="bg-white text-navy rounded-2xl p-10 hover:scale-105 transition-all fade-up fade-up-delay-2">
+            <h3 class="text-3xl font-serif mb-2">Pro</h3>
+            <p class="text-gray-600 mb-6">Maximum velocity</p>
+            <p class="text-6xl font-serif font-bold mb-8">
+              $399<span class="text-xl font-normal text-gray-600">/mo</span>
+            </p>
+            <ul class="space-y-4 mb-10 text-gray-700">
+              <li class="feature-check">12 articles per month</li>
+              <li class="feature-check">800-1200 words each</li>
+              <li class="feature-check">Full SEO audit</li>
+              <li class="feature-check">Content calendar planning</li>
+              <li class="feature-check">Unlimited revisions</li>
+              <li class="feature-check"><strong>Dedicated strategist</strong></li>
+              <li class="feature-check"><strong>Monthly reporting</strong></li>
+            </ul>
+            <a href="/pricing" class="block w-full text-center px-8 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
+              View Details →
             </a>
           </div>
         </div>
       </div>
     </section>
     
-    <!-- CTA Section -->
+    <!-- Results Section -->
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-warm rounded-3xl p-12 lg:p-20 text-center fade-up">
+          <h2 class="text-4xl sm:text-5xl font-serif text-navy mb-6">
+            SEO is a marathon, not a sprint.
+          </h2>
+          <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Most clients see <strong>meaningful organic traffic growth within 3-6 months</strong> of consistent publishing. The key word? <em>Consistent.</em> That's where we come in.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-12 justify-center items-center mt-12 text-left">
+            <div>
+              <p class="text-5xl font-serif font-bold text-amber mb-2">+247%</p>
+              <p class="text-gray-600">Avg. traffic increase after 6 months</p>
+            </div>
+            <div class="hidden sm:block w-px h-16 bg-gray-300"></div>
+            <div>
+              <p class="text-5xl font-serif font-bold text-amber mb-2">96%</p>
+              <p class="text-gray-600">Client retention rate</p>
+            </div>
+            <div class="hidden sm:block w-px h-16 bg-gray-300"></div>
+            <div>
+              <p class="text-5xl font-serif font-bold text-amber mb-2">12k+</p>
+              <p class="text-gray-600">Articles published to date</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Final CTA -->
     <section class="bg-navy text-white py-20">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl font-bold mb-6">Ready to grow with steady content?</h2>
-        <p class="text-xl text-gray-300 mb-8">
-          Join businesses that trust Pensteady for their SEO content needs.
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
+        <h2 class="text-4xl sm:text-5xl font-serif mb-6">Ready to grow with steady content?</h2>
+        <p class="text-xl text-gray-300 mb-10">
+          Join 100+ businesses that trust Pensteady for their SEO content.
         </p>
-        <a href="/contact" class="inline-flex items-center px-8 py-4 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
-          Get Started Today
+        <a href="/contact" class="inline-flex items-center px-12 py-5 bg-amber text-white text-lg font-semibold rounded-lg hover:bg-amber/90 transition-all hover:scale-105 shadow-xl">
+          Get Started Today →
         </a>
+        <p class="mt-6 text-sm text-gray-400">No contracts. Cancel anytime.</p>
       </div>
     </section>
   </main>
