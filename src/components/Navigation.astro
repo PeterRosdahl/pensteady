@@ -1,0 +1,48 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="bg-white border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-2xl font-bold text-navy">
+          Pensteady
+        </a>
+      </div>
+      
+      <div class="hidden md:flex items-center space-x-8">
+        <a 
+          href="/" 
+          class={`text-sm font-medium transition-colors ${currentPath === '/' ? 'text-amber' : 'text-gray-600 hover:text-navy'}`}
+        >
+          Home
+        </a>
+        <a 
+          href="/pricing" 
+          class={`text-sm font-medium transition-colors ${currentPath === '/pricing' ? 'text-amber' : 'text-gray-600 hover:text-navy'}`}
+        >
+          Pricing
+        </a>
+        <a 
+          href="/about" 
+          class={`text-sm font-medium transition-colors ${currentPath === '/about' ? 'text-amber' : 'text-gray-600 hover:text-navy'}`}
+        >
+          About
+        </a>
+        <a 
+          href="/blog" 
+          class={`text-sm font-medium transition-colors ${currentPath.startsWith('/blog') ? 'text-amber' : 'text-gray-600 hover:text-navy'}`}
+        >
+          Blog
+        </a>
+        <a 
+          href="/contact" 
+          class="inline-flex items-center px-4 py-2 bg-amber text-white text-sm font-medium rounded-lg hover:bg-amber/90 transition-colors"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

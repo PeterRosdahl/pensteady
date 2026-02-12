@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1e293b;
+  --color-amber: #f59e0b;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-navy);
+}

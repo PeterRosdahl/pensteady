@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contact - Pensteady" description="Get started with Pensteady. Let's talk about your content goals.">
+  <Navigation />
+  
+  <main>
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center mb-12">
+        <h1 class="text-5xl font-bold text-navy mb-6">Get Started</h1>
+        <p class="text-xl text-gray-600">
+          Ready to grow with steady content? Let's talk about your goals.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Contact Info -->
+        <div>
+          <h2 class="text-2xl font-bold text-navy mb-6">Get in Touch</h2>
+          <p class="text-gray-600 mb-8">
+            Email us directly and we'll get back to you within 24 hours.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-semibold text-navy mb-1">Email</h3>
+                <a href="mailto:hello@pensteady.com" class="text-amber hover:underline">
+                  hello@pensteady.com
+                </a>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-semibold text-navy mb-1">Response Time</h3>
+                <p class="text-gray-600">Within 24 hours</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-12 p-6 bg-gray-50 rounded-xl">
+            <h3 class="font-semibold text-navy mb-3">What to expect</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-amber mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Quick response to your inquiry
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-amber mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Discussion about your content goals
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-amber mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Plan recommendation based on your needs
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-amber mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Easy onboarding process
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Simple CTA (since we don't have a form backend yet) -->
+        <div>
+          <div class="bg-navy rounded-2xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-4">Ready to start?</h2>
+            <p class="text-gray-300 mb-6">
+              Send us an email with:
+            </p>
+            <ul class="space-y-3 mb-8 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-amber mr-2">→</span>
+                Your website URL
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber mr-2">→</span>
+                Your target audience/niche
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber mr-2">→</span>
+                Which plan you're interested in
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber mr-2">→</span>
+                Any specific content goals
+              </li>
+            </ul>
+            
+            <a 
+              href="mailto:hello@pensteady.com?subject=Let's%20talk%20about%20Pensteady&body=Hi!%0A%0AMy%20website:%20[your-site.com]%0ATarget%20audience:%20[describe]%0AInterested%20in:%20[Starter/Growth/Pro]%0AContent%20goals:%20[describe]%0A%0AThanks!" 
+              class="block w-full text-center px-6 py-4 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors"
+            >
+              Send Email
+            </a>
+            
+            <p class="text-sm text-gray-400 mt-4 text-center">
+              We'll respond within 24 hours
+            </p>
+          </div>
+          
+          <div class="mt-8 text-center">
+            <p class="text-gray-600 mb-4">Have questions first?</p>
+            <a href="/pricing" class="text-amber font-semibold hover:underline">
+              View Pricing & FAQ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

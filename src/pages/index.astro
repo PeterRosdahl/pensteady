@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Pensteady - Steady SEO Content That Ranks" description="Professional SEO blog content delivered monthly. Set it and forget it - we handle everything from keyword research to publishing.">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-5xl lg:text-6xl font-bold text-navy leading-tight mb-6">
+            Steady content.<br/>
+            <span class="text-amber">Steady growth.</span>
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Professional SEO blog content delivered monthly. We handle everything from keyword research to publishing on your site.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
+              Get Started
+            </a>
+            <a href="/pricing" class="inline-flex items-center justify-center px-8 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
+              View Pricing
+            </a>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <!-- Simple SVG Hero Illustration -->
+          <svg viewBox="0 0 400 300" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+            <!-- Pen -->
+            <line x1="50" y1="150" x2="150" y2="150" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="40" cy="150" r="8" fill="#1e293b"/>
+            <line x1="50" y1="150" x2="50" y2="130" stroke="#1e293b" stroke-width="2"/>
+            
+            <!-- Steady lines transforming into graph -->
+            <line x1="150" y1="150" x2="200" y2="150" stroke="#1e293b" stroke-width="2"/>
+            <line x1="200" y1="145" x2="250" y2="130" stroke="#f59e0b" stroke-width="2"/>
+            <line x1="250" y1="130" x2="300" y2="110" stroke="#f59e0b" stroke-width="2"/>
+            <line x1="300" y1="110" x2="350" y2="80" stroke="#f59e0b" stroke-width="3"/>
+            
+            <!-- Graph axes -->
+            <line x1="200" y1="200" x2="200" y2="80" stroke="#1e293b" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+            <line x1="200" y1="200" x2="360" y2="200" stroke="#1e293b" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+            
+            <!-- Growth arrow -->
+            <path d="M 340 85 L 350 80 L 345 90" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-navy mb-4">How It Works</h2>
+          <p class="text-xl text-gray-600">Three simple steps to consistent SEO growth</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl">
+            <div class="w-12 h-12 bg-amber/10 text-amber rounded-lg flex items-center justify-center text-2xl font-bold mb-4">
+              1
+            </div>
+            <h3 class="text-xl font-semibold text-navy mb-3">Choose Your Plan</h3>
+            <p class="text-gray-600">
+              Select a plan that fits your content needs. From 4 to 12 articles per month.
+            </p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl">
+            <div class="w-12 h-12 bg-amber/10 text-amber rounded-lg flex items-center justify-center text-2xl font-bold mb-4">
+              2
+            </div>
+            <h3 class="text-xl font-semibold text-navy mb-3">We Create & Optimize</h3>
+            <p class="text-gray-600">
+              Our team researches keywords, writes SEO-optimized content, and prepares everything for publishing.
+            </p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl">
+            <div class="w-12 h-12 bg-amber/10 text-amber rounded-lg flex items-center justify-center text-2xl font-bold mb-4">
+              3
+            </div>
+            <h3 class="text-xl font-semibold text-navy mb-3">Content Goes Live</h3>
+            <p class="text-gray-600">
+              Articles are published directly to your site. You focus on your business while rankings grow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pricing Preview -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-navy mb-4">Simple, Transparent Pricing</h2>
+          <p class="text-xl text-gray-600">No hidden fees. Cancel anytime.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="border-2 border-gray-200 rounded-xl p-8 hover:border-amber transition-colors">
+            <h3 class="text-2xl font-bold text-navy mb-2">Starter</h3>
+            <p class="text-4xl font-bold text-navy mb-1">$99<span class="text-xl font-normal text-gray-600">/mo</span></p>
+            <p class="text-gray-600 mb-6">4 articles per month</p>
+            <a href="/pricing" class="block w-full text-center px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
+              Learn More
+            </a>
+          </div>
+          
+          <div class="border-2 border-amber rounded-xl p-8 relative">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber text-white px-4 py-1 rounded-full text-sm font-semibold">
+              Popular
+            </div>
+            <h3 class="text-2xl font-bold text-navy mb-2">Growth</h3>
+            <p class="text-4xl font-bold text-navy mb-1">$199<span class="text-xl font-normal text-gray-600">/mo</span></p>
+            <p class="text-gray-600 mb-6">8 articles per month</p>
+            <a href="/pricing" class="block w-full text-center px-6 py-3 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
+              Learn More
+            </a>
+          </div>
+          
+          <div class="border-2 border-gray-200 rounded-xl p-8 hover:border-amber transition-colors">
+            <h3 class="text-2xl font-bold text-navy mb-2">Pro</h3>
+            <p class="text-4xl font-bold text-navy mb-1">$399<span class="text-xl font-normal text-gray-600">/mo</span></p>
+            <p class="text-gray-600 mb-6">12 articles per month</p>
+            <a href="/pricing" class="block w-full text-center px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="bg-navy text-white py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold mb-6">Ready to grow with steady content?</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Join businesses that trust Pensteady for their SEO content needs.
+        </p>
+        <a href="/contact" class="inline-flex items-center px-8 py-4 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
+          Get Started Today
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
