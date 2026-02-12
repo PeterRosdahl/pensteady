@@ -4,89 +4,219 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="About - Pensteady" description="Learn about Pensteady's mission to help businesses grow through steady, high-quality SEO content.">
+<Layout 
+  title="About Pensteady | Our Mission & Process" 
+  description="We help businesses grow through steady, professional SEO content. Learn about our mission, process, and the team behind Pensteady."
+>
   <Navigation />
   
   <main>
-    <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <h1 class="text-5xl font-bold text-navy mb-8 text-center">About Pensteady</h1>
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <h1 class="text-6xl lg:text-7xl font-bold text-navy mb-12 text-center slide-up">About Pensteady</h1>
       
       <div class="prose prose-lg max-w-none">
-        <p class="text-xl text-gray-600 leading-relaxed mb-8">
-          Pensteady was built on a simple observation: most businesses know they need to publish content for SEO, but they struggle to do it consistently.
+        <p class="text-2xl text-gray-700 leading-relaxed mb-12 text-center max-w-4xl mx-auto slide-up" style="animation-delay: 0.1s">
+          We help businesses grow through steady, professional SEO content. No hype, no gimmicks—just consistent, high-quality articles that rank.
         </p>
         
-        <h2 class="text-3xl font-bold text-navy mt-12 mb-6">The Problem</h2>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          Content marketing is time-consuming. Between keyword research, writing, editing, and publishing, a single blog post can take hours. Small businesses and startups often start strong but lose momentum after a few months.
-        </p>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          The result? Inconsistent publishing, missed SEO opportunities, and stagnant organic traffic.
-        </p>
-        
-        <h2 class="text-3xl font-bold text-navy mt-12 mb-6">Our Solution</h2>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          Pensteady takes the entire content workflow off your plate. We handle keyword research, content creation, SEO optimization, and publishing—all on a predictable monthly schedule.
-        </p>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          You get professional, SEO-optimized blog content delivered consistently, without the time commitment or hiring headaches.
-        </p>
-        
-        <h2 class="text-3xl font-bold text-navy mt-12 mb-6">Our Approach</h2>
-        <div class="bg-gray-50 rounded-xl p-8 mb-8">
-          <ul class="space-y-4">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <strong class="text-navy">No AI hype</strong>
-                <p class="text-gray-600 mt-1">We use AI as a tool, not a gimmick. Every article is reviewed and optimized by real humans.</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <strong class="text-navy">SEO-first</strong>
-                <p class="text-gray-600 mt-1">Every article is built around target keywords with proper on-page optimization.</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <strong class="text-navy">Consistent quality</strong>
-                <p class="text-gray-600 mt-1">Same high standard every month. No surprises, no off-brand content.</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <strong class="text-navy">Full transparency</strong>
-                <p class="text-gray-600 mt-1">You see everything—keyword reports, content calendars, and performance metrics.</p>
-              </div>
-            </li>
-          </ul>
+        <!-- The Problem -->
+        <div class="mb-20 fade-in">
+          <h2 class="text-5xl font-bold text-navy mt-16 mb-8">The Problem We Solve</h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Content marketing is time-consuming. Between keyword research, writing, editing, SEO optimization, and publishing, a single blog post can take 4-6 hours. Small businesses and startups often start strong but lose momentum after a few months.
+          </p>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            The result? Inconsistent publishing, missed SEO opportunities, and stagnant organic traffic. Google rewards consistency—sporadic content doesn't cut it.
+          </p>
+          <div class="bg-amber/10 border-l-4 border-amber rounded-lg p-8 my-10">
+            <p class="text-xl text-navy font-semibold mb-2">Here's the truth:</p>
+            <p class="text-gray-700 leading-relaxed">
+              Businesses that publish 4+ blog posts per month get 3.5x more traffic than those that publish 0-4 per month. Consistency compounds. Rankings grow. Traffic follows.
+            </p>
+          </div>
         </div>
         
-        <h2 class="text-3xl font-bold text-navy mt-12 mb-6">Why "Pensteady"?</h2>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          The name reflects our philosophy: steady, reliable content beats sporadic bursts every time. SEO rewards consistency. Rankings compound. Traffic grows.
-        </p>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          We're not here to promise overnight results or viral hits. We're here to help you build a content foundation that drives steady, predictable growth.
-        </p>
+        <!-- Our Solution -->
+        <div class="mb-20 fade-in" style="animation-delay: 0.1s">
+          <h2 class="text-5xl font-bold text-navy mb-8">Our Solution</h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Pensteady takes the entire content workflow off your plate. We handle keyword research, content creation, SEO optimization, and publishing—all on a predictable monthly schedule.
+          </p>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            You get professional, SEO-optimized blog content delivered consistently, without the time commitment or hiring headaches. Set it and forget it.
+          </p>
+        </div>
         
-        <div class="bg-amber/10 border-l-4 border-amber rounded-lg p-6 mt-12">
-          <p class="text-lg text-navy font-medium mb-2">Ready to grow steadily?</p>
-          <p class="text-gray-700 mb-4">Let's talk about your content goals.</p>
-          <a href="/contact" class="inline-flex items-center px-6 py-3 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
-            Get Started
+        <!-- How Our Process Works -->
+        <div class="mb-20 fade-in" style="animation-delay: 0.2s">
+          <h2 class="text-5xl font-bold text-navy mb-8">How Our Process Works</h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-10">
+            We've refined a 5-step process that delivers consistent, high-quality SEO content every month:
+          </p>
+          
+          <div class="space-y-10">
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-14 h-14 bg-amber/10 text-amber rounded-2xl flex items-center justify-center text-2xl font-bold">
+                  1
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-navy mb-3">Discovery & Niche Analysis</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  We analyze your industry, competitors, and target audience. We identify keyword gaps, content opportunities, and topics that will drive traffic to your business.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-14 h-14 bg-amber/10 text-amber rounded-2xl flex items-center justify-center text-2xl font-bold">
+                  2
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-navy mb-3">Keyword Research & Content Strategy</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  Using tools like Ahrefs and SEMrush, we find high-opportunity keywords with search volume and realistic ranking potential. We build a content calendar targeting keywords that will move the needle.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-14 h-14 bg-amber/10 text-amber rounded-2xl flex items-center justify-center text-2xl font-bold">
+                  3
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-navy mb-3">Content Creation & Writing</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  Our team writes articles optimized for search intent and user experience. We use AI-assisted writing for efficiency but every article is reviewed, edited, and refined by human editors who understand SEO and your brand voice.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-14 h-14 bg-amber/10 text-amber rounded-2xl flex items-center justify-center text-2xl font-bold">
+                  4
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-navy mb-3">SEO Optimization</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  Before publishing, we optimize every article: target keyword in title and H1, semantic keyword variations in subheadings, optimized meta description, internal links to your existing content, and proper image alt tags.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-14 h-14 bg-amber/10 text-amber rounded-2xl flex items-center justify-center text-2xl font-bold">
+                  5
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-navy mb-3">Publishing & Performance Tracking</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  We publish directly to your CMS via API—no manual uploads required. After publishing, we track rankings, traffic, and engagement. Pro plan clients get monthly reports showing exactly how content is performing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Our Philosophy -->
+        <div class="mb-20 fade-in" style="animation-delay: 0.3s">
+          <h2 class="text-5xl font-bold text-navy mb-8">Our Philosophy on Content</h2>
+          <div class="bg-gray-50 rounded-3xl p-10">
+            <ul class="space-y-6">
+              <li class="flex items-start">
+                <svg class="w-7 h-7 text-amber mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <strong class="text-xl text-navy">No AI hype, just smart tools</strong>
+                  <p class="text-gray-600 mt-2 leading-relaxed">We use AI as a tool, not a replacement for human judgment. Every article is reviewed and optimized by real editors who understand SEO and brand voice.</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-7 h-7 text-amber mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <strong class="text-xl text-navy">SEO-first, always</strong>
+                  <p class="text-gray-600 mt-2 leading-relaxed">Every article is built around target keywords with proper on-page optimization. We don't write "content for content's sake"—we write content that ranks.</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-7 h-7 text-amber mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <strong class="text-xl text-navy">Consistency over perfection</strong>
+                  <p class="text-gray-600 mt-2 leading-relaxed">Publishing 4 good articles per month beats publishing 1 perfect article per quarter. SEO rewards consistency. We help you show up every month.</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-7 h-7 text-amber mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <strong class="text-xl text-navy">Full transparency</strong>
+                  <p class="text-gray-600 mt-2 leading-relaxed">You see everything—keyword reports, content calendars, and performance metrics. No black boxes, no surprises.</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-7 h-7 text-amber mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <strong class="text-xl text-navy">Long-term thinking</strong>
+                  <p class="text-gray-600 mt-2 leading-relaxed">We're not here to promise overnight results or viral hits. We're here to help you build a content foundation that drives steady, predictable growth over time.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Why "Pensteady"? -->
+        <div class="mb-20 fade-in" style="animation-delay: 0.4s">
+          <h2 class="text-5xl font-bold text-navy mb-8">Why "Pensteady"?</h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            The name reflects our philosophy: <strong>steady, reliable content beats sporadic bursts every time.</strong>
+          </p>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            SEO rewards consistency. Rankings compound. Traffic grows. The businesses that win at content marketing are the ones that show up every month, without fail.
+          </p>
+          <p class="text-xl text-gray-700 leading-relaxed">
+            We're the partner that helps you stay steady—so you can focus on running your business while your content works for you.
+          </p>
+        </div>
+        
+        <!-- Team -->
+        <div class="mb-20 fade-in" style="animation-delay: 0.5s">
+          <h2 class="text-5xl font-bold text-navy mb-8">The Team</h2>
+          <div class="bg-navy text-white rounded-3xl p-12">
+            <p class="text-xl leading-relaxed mb-6">
+              Pensteady was founded by a team of SEO professionals, content strategists, and developers who were frustrated by the inconsistency of traditional content agencies.
+            </p>
+            <p class="text-xl leading-relaxed mb-6">
+              We saw businesses struggling to publish consistently. We saw agencies over-promising and under-delivering. We built Pensteady to be different: transparent pricing, predictable delivery, and content that actually ranks.
+            </p>
+            <p class="text-xl leading-relaxed">
+              Today, we help businesses across industries grow their organic traffic through steady, professional content. We're not the biggest agency—but we're the most reliable.
+            </p>
+          </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="bg-amber/10 border-l-4 border-amber rounded-2xl p-10 mt-16 fade-in" style="animation-delay: 0.6s">
+          <p class="text-2xl text-navy font-bold mb-4">Ready to grow steadily?</p>
+          <p class="text-gray-700 text-lg mb-6 leading-relaxed">Let's talk about your content goals and how we can help you rank.</p>
+          <a href="/contact" class="inline-flex items-center px-10 py-4 bg-amber text-white text-lg font-semibold rounded-xl hover:bg-amber/90 transition-all hover:scale-105">
+            Get Started Today
           </a>
         </div>
       </div>

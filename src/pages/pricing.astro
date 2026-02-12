@@ -4,219 +4,375 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Pricing - Pensteady" description="Transparent pricing for professional SEO content. Choose a plan that fits your growth goals.">
+<Layout title="Pricing - Pensteady" description="Transparent pricing for professional SEO content. 4-12 articles per month. Keyword research, meta tags, and CMS publishing included.">
   <Navigation />
   
   <main>
     <!-- Hero -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h1 class="text-5xl font-bold text-navy mb-6">Simple, Transparent Pricing</h1>
-        <p class="text-xl text-gray-600">
-          Choose a plan that fits your content needs. All plans include keyword research, SEO optimization, and direct publishing to your site.
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="text-center max-w-3xl mx-auto mb-20 fade-up">
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-serif text-navy mb-6">Simple, Transparent Pricing</h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          All plans include keyword research, SEO optimization, and direct CMS publishing. <strong>No hidden fees.</strong> Cancel anytime.
         </p>
       </div>
       
       <!-- Pricing Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
         <!-- Starter -->
-        <div class="border-2 border-gray-200 rounded-2xl p-8 hover:border-amber transition-colors">
-          <h2 class="text-2xl font-bold text-navy mb-2">Starter</h2>
-          <p class="text-gray-600 mb-6">Perfect for new blogs</p>
-          <p class="text-5xl font-bold text-navy mb-8">
-            $99<span class="text-xl font-normal text-gray-600">/mo</span>
-          </p>
+        <div class="border-2 border-gray-200 rounded-2xl p-10 hover:border-amber transition-all hover:shadow-xl fade-up">
+          <div class="mb-8">
+            <h2 class="text-3xl font-serif text-navy mb-2">Starter</h2>
+            <p class="text-gray-600 mb-6">Perfect for new blogs building authority</p>
+            <p class="text-6xl font-serif font-bold text-navy mb-2">
+              $99<span class="text-xl font-normal text-gray-600">/mo</span>
+            </p>
+          </div>
           
-          <ul class="space-y-4 mb-8">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">4 articles per month</span>
+              <span><strong>4 articles per month</strong></span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">800-1200 words each</span>
+              <span>800-1200 words each</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Keyword research</span>
+              <span>Keyword research for every article</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">SEO optimization</span>
+              <span>Meta titles & descriptions optimized</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Direct CMS publishing</span>
+              <span><strong>1 revision per article</strong></span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Direct CMS publishing (WordPress, Webflow, Ghost)</span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Email support</span>
             </li>
           </ul>
           
-          <a href="/contact" class="block w-full text-center px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
+          <a href="/contact" class="block w-full text-center px-8 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
             Get Started
           </a>
         </div>
         
         <!-- Growth (Popular) -->
-        <div class="border-2 border-amber rounded-2xl p-8 relative transform md:scale-105">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber text-white px-4 py-1 rounded-full text-sm font-semibold">
+        <div class="border-2 border-amber rounded-2xl p-10 relative transform lg:scale-105 shadow-xl bg-amber/5 fade-up fade-up-delay-1">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide shadow-lg">
             Most Popular
           </div>
-          <h2 class="text-2xl font-bold text-navy mb-2">Growth</h2>
-          <p class="text-gray-600 mb-6">For growing businesses</p>
-          <p class="text-5xl font-bold text-navy mb-8">
-            $199<span class="text-xl font-normal text-gray-600">/mo</span>
-          </p>
+          <div class="mb-8">
+            <h2 class="text-3xl font-serif text-navy mb-2">Growth</h2>
+            <p class="text-gray-600 mb-6">For businesses scaling organic traffic</p>
+            <p class="text-6xl font-serif font-bold text-navy mb-2">
+              $199<span class="text-xl font-normal text-gray-600">/mo</span>
+            </p>
+          </div>
           
-          <ul class="space-y-4 mb-8">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">8 articles per month</span>
+              <span><strong>8 articles per month</strong></span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">800-1200 words each</span>
+              <span>800-1200 words each</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Keyword research</span>
+              <span><strong>Keyword strategy report</strong> (monthly)</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">SEO optimization</span>
+              <span><strong>Competitor analysis</strong></span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Direct CMS publishing</span>
+              <span>Meta titles & descriptions optimized</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700"><strong>Monthly keyword strategy report</strong></span>
+              <span><strong>2 revisions per article</strong></span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Direct CMS publishing (WordPress, Webflow, Ghost)</span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>Priority support</strong> (24h response time)</span>
             </li>
           </ul>
           
-          <a href="/contact" class="block w-full text-center px-6 py-3 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
+          <a href="/contact" class="block w-full text-center px-8 py-4 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-all hover:scale-105">
             Get Started
           </a>
         </div>
         
         <!-- Pro -->
-        <div class="border-2 border-gray-200 rounded-2xl p-8 hover:border-amber transition-colors">
-          <h2 class="text-2xl font-bold text-navy mb-2">Pro</h2>
-          <p class="text-gray-600 mb-6">Maximum content velocity</p>
-          <p class="text-5xl font-bold text-navy mb-8">
-            $399<span class="text-xl font-normal text-gray-600">/mo</span>
-          </p>
+        <div class="border-2 border-gray-200 rounded-2xl p-10 hover:border-amber transition-all hover:shadow-xl fade-up fade-up-delay-2">
+          <div class="mb-8">
+            <h2 class="text-3xl font-serif text-navy mb-2">Pro</h2>
+            <p class="text-gray-600 mb-6">Maximum content velocity + strategy</p>
+            <p class="text-6xl font-serif font-bold text-navy mb-2">
+              $399<span class="text-xl font-normal text-gray-600">/mo</span>
+            </p>
+          </div>
           
-          <ul class="space-y-4 mb-8">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">12 articles per month</span>
+              <span><strong>12 articles per month</strong></span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">800-1200 words each</span>
+              <span>800-1200 words each</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Keyword research</span>
+              <span><strong>Full SEO audit</strong> (technical + on-page)</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">SEO optimization</span>
+              <span><strong>Content calendar</strong> (12-week planning)</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Direct CMS publishing</span>
+              <span>Keyword strategy report (monthly)</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700"><strong>Monthly keyword strategy report</strong></span>
+              <span>Competitor analysis</span>
             </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-amber mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700"><strong>Competitor analysis</strong></span>
+              <span><strong>Unlimited revisions</strong></span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>Dedicated SEO strategist</strong></span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>Monthly performance reporting</strong></span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Direct CMS publishing (WordPress, Webflow, Ghost)</span>
+            </li>
+            <li class="flex items-start text-gray-700">
+              <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Priority support (12h response time)</span>
             </li>
           </ul>
           
-          <a href="/contact" class="block w-full text-center px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
+          <a href="/contact" class="block w-full text-center px-8 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors">
             Get Started
           </a>
         </div>
       </div>
       
+      <!-- Comparison Table -->
+      <div class="max-w-6xl mx-auto mb-20 fade-up">
+        <h3 class="text-3xl font-serif text-navy text-center mb-12">Compare Plans</h3>
+        <div class="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden">
+          <table class="w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-6 py-4 text-left font-semibold text-navy">Feature</th>
+                <th class="px-6 py-4 text-center font-semibold text-navy">Starter</th>
+                <th class="px-6 py-4 text-center font-semibold text-amber bg-amber/5">Growth</th>
+                <th class="px-6 py-4 text-center font-semibold text-navy">Pro</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Articles per month</td>
+                <td class="px-6 py-4 text-center font-semibold">4</td>
+                <td class="px-6 py-4 text-center font-semibold bg-amber/5">8</td>
+                <td class="px-6 py-4 text-center font-semibold">12</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Word count</td>
+                <td class="px-6 py-4 text-center">800-1200</td>
+                <td class="px-6 py-4 text-center bg-amber/5">800-1200</td>
+                <td class="px-6 py-4 text-center">800-1200</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Keyword research</td>
+                <td class="px-6 py-4 text-center">✓</td>
+                <td class="px-6 py-4 text-center bg-amber/5">✓</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Meta tags optimization</td>
+                <td class="px-6 py-4 text-center">✓</td>
+                <td class="px-6 py-4 text-center bg-amber/5">✓</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Revisions per article</td>
+                <td class="px-6 py-4 text-center">1</td>
+                <td class="px-6 py-4 text-center bg-amber/5">2</td>
+                <td class="px-6 py-4 text-center font-semibold">Unlimited</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Keyword strategy report</td>
+                <td class="px-6 py-4 text-center text-gray-400">—</td>
+                <td class="px-6 py-4 text-center bg-amber/5">✓</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Competitor analysis</td>
+                <td class="px-6 py-4 text-center text-gray-400">—</td>
+                <td class="px-6 py-4 text-center bg-amber/5">✓</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Full SEO audit</td>
+                <td class="px-6 py-4 text-center text-gray-400">—</td>
+                <td class="px-6 py-4 text-center text-gray-400 bg-amber/5">—</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Content calendar</td>
+                <td class="px-6 py-4 text-center text-gray-400">—</td>
+                <td class="px-6 py-4 text-center text-gray-400 bg-amber/5">—</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Dedicated strategist</td>
+                <td class="px-6 py-4 text-center text-gray-400">—</td>
+                <td class="px-6 py-4 text-center text-gray-400 bg-amber/5">—</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Monthly reporting</td>
+                <td class="px-6 py-4 text-center text-gray-400">—</td>
+                <td class="px-6 py-4 text-center text-gray-400 bg-amber/5">—</td>
+                <td class="px-6 py-4 text-center">✓</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-gray-700">Support response time</td>
+                <td class="px-6 py-4 text-center">48h</td>
+                <td class="px-6 py-4 text-center bg-amber/5 font-semibold">24h</td>
+                <td class="px-6 py-4 text-center font-semibold">12h</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
       <!-- FAQ Section -->
-      <div class="mt-20 max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold text-navy text-center mb-12">Frequently Asked Questions</h2>
+      <div class="max-w-3xl mx-auto fade-up">
+        <h2 class="text-4xl font-serif text-navy text-center mb-12">Frequently Asked Questions</h2>
         
         <div class="space-y-6">
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-navy mb-2">Can I cancel anytime?</h3>
-            <p class="text-gray-600">Yes. All plans are month-to-month with no long-term contracts. Cancel anytime.</p>
+          <div class="bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-serif text-navy mb-3">Can I cancel anytime?</h3>
+            <p class="text-gray-600 leading-relaxed">Yes. All plans are month-to-month with <strong>no long-term contracts.</strong> Cancel anytime with zero penalties.</p>
           </div>
           
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-navy mb-2">What platforms do you support?</h3>
-            <p class="text-gray-600">We publish to WordPress, Webflow, Ghost, and most major CMS platforms via API integration.</p>
+          <div class="bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-serif text-navy mb-3">What platforms do you support?</h3>
+            <p class="text-gray-600 leading-relaxed">We publish directly to <strong>WordPress, Webflow, Ghost, Shopify,</strong> and most major CMS platforms via API integration. If your platform has an API, we can publish to it.</p>
           </div>
           
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-navy mb-2">How quickly will I see results?</h3>
-            <p class="text-gray-600">SEO is a long-term strategy. Most clients see meaningful traffic growth within 3-6 months of consistent publishing.</p>
+          <div class="bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-serif text-navy mb-3">How quickly will I see results?</h3>
+            <p class="text-gray-600 leading-relaxed">SEO is a marathon, not a sprint. Most clients see <strong>meaningful traffic growth within 3-6 months</strong> of consistent publishing. The key is consistency—which we guarantee.</p>
           </div>
           
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-navy mb-2">Do you write in my brand voice?</h3>
-            <p class="text-gray-600">Yes. We'll analyze your existing content and match your tone, style, and brand voice.</p>
+          <div class="bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-serif text-navy mb-3">Do you write in my brand voice?</h3>
+            <p class="text-gray-600 leading-relaxed">Yes. During onboarding, we analyze your existing content and match your <strong>tone, style, and brand voice.</strong> Most clients can't tell the difference.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-serif text-navy mb-3">What if I need more articles?</h3>
+            <p class="text-gray-600 leading-relaxed">You can upgrade your plan anytime. If you need <strong>more than 12 articles per month,</strong> contact us for custom enterprise pricing.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-serif text-navy mb-3">Do you offer refunds?</h3>
+            <p class="text-gray-600 leading-relaxed">We offer a <strong>100% satisfaction guarantee</strong> on your first month. If you're not happy with the quality, we'll refund you in full—no questions asked.</p>
           </div>
         </div>
       </div>
     </section>
     
     <!-- CTA -->
-    <section class="bg-navy text-white py-16">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold mb-4">Ready to get started?</h2>
-        <p class="text-xl text-gray-300 mb-8">
+    <section class="bg-navy text-white py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
+        <h2 class="text-4xl font-serif mb-6">Ready to get started?</h2>
+        <p class="text-xl text-gray-300 mb-10">
           Choose a plan and start growing your organic traffic today.
         </p>
-        <a href="/contact" class="inline-flex items-center px-8 py-4 bg-amber text-white font-semibold rounded-lg hover:bg-amber/90 transition-colors">
-          Get Started
+        <a href="/contact" class="inline-flex items-center px-12 py-5 bg-amber text-white text-lg font-semibold rounded-lg hover:bg-amber/90 transition-all hover:scale-105 shadow-xl">
+          Get Started →
         </a>
+        <p class="mt-6 text-sm text-gray-400">No contracts. 100% satisfaction guarantee.</p>
       </div>
     </section>
   </main>
